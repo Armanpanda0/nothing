@@ -1,0 +1,164 @@
+int big=0,sml=0;
+        int ans=0;
+
+		//throw new UnsupportedOperationException("findKey(int input1,int input2,int input3)");
+        while(input1 > 0 && input2 >0 && input3 >0){
+
+            if(input1>999 || input2 >999 || input3 > 999){
+                int a=input1%10;
+                int b=input2%10;
+                int c=input3%10;
+                if(a>b && a>c){
+                    big=a;
+                    if(b>c){
+                        sml=c;
+                    }
+                    else{
+                        sml=b;
+                    }
+                }
+                else if(b>a && b> c){
+                    big=b;
+                     if(a>c){
+                        sml=c;
+                    }
+                    else{
+                        sml=a;
+                    }
+                }
+                else{
+                    big=c;
+                     if(a>b){
+                        sml=b;
+                    }
+                    else{
+                        sml=a;
+                    }
+                }
+            }
+                 ans=(ans*10)+(big-sml);
+                input1=input1/10;
+                input2=input2/10;
+                input3=input3/10;
+                if(input1>99 || input2 >99 || input3 > 99){
+                int a=input1%10;
+                int b=input2%10;
+                int c=input3%10;
+                if(a>b && a>c){
+                    big=a;
+                    if(b>c){
+                        sml=c;
+                    }
+                    else{
+                        sml=b;
+                    }
+                }
+                else if(b>a && b> c){
+                    big=b;
+                     if(a>c){
+                        sml=c;
+                    }
+                    else{
+                        sml=a;
+                    }
+                }
+                else{
+                    big=c;
+                     if(a>b){
+                        sml=b;
+                    }
+                    else{
+                        sml=a;
+                    }
+                }
+            }
+             ans=(ans*10)+(big-sml);
+                input1=input1/10;
+                input2=input2/10;
+                input3=input3/10;
+
+                 if(input1>9 || input2 >9 || input3 > 9){
+                int a=input1%10;
+                int b=input2%10;
+                int c=input3%10;
+                if(a>b && a>c){
+                    big=a;
+                    if(b>c){
+                        sml=c;
+                    }
+                    else{
+                        sml=b;
+                    }
+                }
+                else if(b>a && b> c){
+                    big=b;
+                     if(a>c){
+                        sml=c;
+                    }
+                    else{
+                        sml=a;
+                    }
+                }
+                else{
+                    big=c;
+                     if(a>b){
+                        sml=b;
+                    }
+                    else{
+                        sml=a;
+                    }
+                }
+            }
+             ans=(ans*10)+(big-sml);
+                input1=input1/10;
+                input2=input2/10;
+                input3=input3/10;
+
+                 if(input1>1 || input2 >1 || input3 > 1){
+                int a=input1%10;
+                int b=input2%10;
+                int c=input3%10;
+                if(a>b && a>c){
+                    big=a;
+                    if(b>c){
+                        sml=c;
+                    }
+                    else{
+                        sml=b;
+                    }
+                }
+                else if(b>a && b> c){
+                    big=b;
+                     if(a>c){
+                        sml=c;
+                    }
+                    else{
+                        sml=a;
+                    }
+                }
+                else{
+                    big=c;
+                     if(a>b){
+                        sml=b;
+                    }
+                    else{
+                        sml=a;
+                    }
+                }
+            }
+             ans=(ans*10)+(big-sml);
+                input1=input1/10;
+                input2=input2/10;
+                input3=input3/10;
+
+        }
+   System.out.print("is"+ans);
+        int reverse=0;
+        while(ans > 0){
+            int temp= ans %10;
+            reverse=(reverse *10)+temp;
+            ans /= 10;
+        }
+
+        
+        return ans;
